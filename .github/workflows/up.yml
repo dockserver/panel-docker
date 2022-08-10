@@ -1,0 +1,35 @@
+name: Upgrade NPM packages
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron:  "0 0 * * 0"
+
+jobs:
+  upgrade-packages:
+    name: Upgrade packages
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [ 14.x ]
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js for  ${{ matrix.node-version }} ⚙️
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Upgrade packages 🔀
+        run: npm i -g pnpm@6.32.14 && pnpm -r update
+
+      - name: Commit and create PR 🔀
+        uses: peter-evans/create-pull-request@v4
+        with:
+          title: 'build(deps): Upgrade NPM packages (automated)'
+          branch: 'build-deps-upgrade-npm-packages-automated'
+          commit-message: 'build(deps): upgrade NPM packages for ${{ matrix.node-version }} (automated)'

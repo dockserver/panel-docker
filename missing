@@ -1,0 +1,25 @@
+#0 14.84  ERR_PNPM_PEER_DEP_ISSUES  Unmet peer dependencies
+#0 14.84
+#0 14.84 .
+#0 14.84 ├─┬ @emotion/react 11.10.0
+#0 14.84 │ ├── ✕ missing peer @babel/core@^7.0.0
+#0 14.84 │ └─┬ @emotion/babel-plugin 11.10.0
+#0 14.84 │   ├── ✕ missing peer @babel/core@^7.0.0
+#0 14.84 │   └─┬ @babel/plugin-syntax-jsx 7.18.6
+#0 14.84 │     └── ✕ missing peer @babel/core@^7.0.0-0
+#0 14.84 ├─┬ @emotion/styled 11.10.0
+#0 14.84 │ └── ✕ missing peer @babel/core@^7.0.0
+#0 14.84 └─┬ @rebass/forms 4.0.6
+#0 14.84   ├── ✕ unmet peer react@^16.8.6: found 17.0.2
+#0 14.84   └─┬ reflexbox 4.0.6
+#0 14.84     └── ✕ unmet peer react@^16.8.6: found 17.0.2
+#0 14.84 Peer dependencies that should be installed:
+#0 14.84   @babel/core@">=7.0.0 <8.0.0"
+#0 14.84
+#0 14.84 hint: If you want peer dependencies to be automatically
+installed, add "auto-install-
+peers=true" to an .npmrc file at the root of your project.
+#0 14.84 hint: If you don't want pnpm to fail on peer dependency
+issues, add "strict-peer-depe
+ndencies=false" to an .npmrc file at the root of your project.
+#0 14.84
