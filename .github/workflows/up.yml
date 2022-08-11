@@ -8,6 +8,7 @@ on:
 
 jobs:
   upgrade-packages:
+    if: github.actor!= 'dependabot-preview[bot]'
     name: Upgrade packages
 
     runs-on: ubuntu-latest
