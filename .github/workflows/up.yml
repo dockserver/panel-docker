@@ -8,6 +8,7 @@ on:
 
 jobs:
   upgrade-packages:
+    if: github.actor!= 'dependabot-preview[bot]'
     name: Upgrade packages
 
     runs-on: ubuntu-latest
@@ -27,7 +28,7 @@ jobs:
       - name: Upgrade packages 🔀
         run: |
           echo "run pnpm update packages from packages.json"
-          npm i -g pnpm@6.32.14 && pnpm -r update
+          npm i -g pnpm@6.32.24 && pnpm -r update
           if [[ -n $(git status --porcelain) ]]; then
              git config --global --add safe.directory /home/runner/work/panel-docker/panel-docker
              git config --global user.name 'github-actions[bot]'

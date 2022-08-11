@@ -1,10 +1,15 @@
-name: Build Multi Stage Docker Image
+name: Build Image
+
 on:
-  workflow_dispatch:
+  workflow_run:
+    workflows: ["Node CI"]
+    types:
+      - completed
 
 jobs:
   GHRC:
     ##runs-on: self-hosted
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
