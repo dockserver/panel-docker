@@ -1,9 +1,14 @@
 name: Node CI
 
-on: [ push ]
+on:
+  workflow_run:
+    workflows: ["Upgrade NPM packages"]
+    types:
+      - completed
 
 jobs:
     lint:
+        if: github.actor!= 'dependabot-preview[bot]'
         runs-on: ubuntu-latest
 
         strategy:
