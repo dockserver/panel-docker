@@ -4,6 +4,7 @@ on: [ push ]
 
 jobs:
     lint:
+        if: github.actor!= 'dependabot-preview[bot]'
         runs-on: ubuntu-latest
 
         strategy:
