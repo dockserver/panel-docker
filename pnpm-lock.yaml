@@ -23,7 +23,7 @@ specifiers:
   classnames: ^2.3.1
   concurrently: ^7.3.0
   cross-env: ^7.0.3
-  css-loader: ^5.2.7
+  css-loader: ^6.7.1
   dockerode: 3.3.3
   dockerode-compose: 1.3.1
   eslint: 7.15.0
@@ -108,7 +108,7 @@ devDependencies:
   '@typescript-eslint/parser': 4.10.0_eslint@7.15.0+typescript@4.7.4
   concurrently: 7.3.0
   cross-env: 7.0.3
-  css-loader: 5.2.7_webpack@5.74.0
+  css-loader: 6.7.1_webpack@5.74.0
   eslint: 7.15.0
   eslint-config-prettier: 7.0.0_eslint@7.15.0
   eslint-plugin-prettier: 3.2.0_eslint@7.15.0+prettier@2.7.1
@@ -3186,21 +3186,19 @@ packages:
       tiny-invariant: 1.2.0
     dev: false
 
-  /css-loader/5.2.7_webpack@5.74.0:
-    resolution: {integrity: sha512-Q7mOvpBNBG7YrVGMxRxcBJZFL75o+cH2abNASdibkj/fffYD8qWbInZrD0S9ccI6vZclF3DsHE7njGlLtaHbhg==}
-    engines: {node: '>= 10.13.0'}
+  /css-loader/6.7.1_webpack@5.74.0:
+    resolution: {integrity: sha512-yB5CNFa14MbPJcomwNh3wLThtkZgcNyI2bNMRt8iE5Z8Vwl7f8vQXFAzn2HDOJvtDq2NTZBUGMSUNNyrv3/+cw==}
+    engines: {node: '>= 12.13.0'}
     peerDependencies:
-      webpack: ^4.27.0 || ^5.0.0
+      webpack: ^5.0.0
     dependencies:
       icss-utils: 5.1.0_postcss@8.4.16
-      loader-utils: 2.0.2
       postcss: 8.4.16
       postcss-modules-extract-imports: 3.0.0_postcss@8.4.16
       postcss-modules-local-by-default: 4.0.0_postcss@8.4.16
       postcss-modules-scope: 3.0.0_postcss@8.4.16
       postcss-modules-values: 4.0.0_postcss@8.4.16
       postcss-value-parser: 4.2.0
-      schema-utils: 3.1.1
       semver: 7.3.7
       webpack: 5.74.0_webpack-cli@4.10.0
     dev: true
