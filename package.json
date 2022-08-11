@@ -39,7 +39,7 @@
     "devDependencies": {
         "@types/bootstrap": "^3.4.0",
         "@types/dockerode": "3.3.9",
-        "@types/jquery": "^2.0.60",
+        "@types/jquery": "^3.5.14",
         "@types/lodash": "^4.14.182",
         "@types/node": "^14.18.23",
         "@types/react": "^17.0.48",
