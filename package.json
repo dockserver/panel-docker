@@ -39,7 +39,7 @@
         "upath": "^2.0.1"
     },
     "devDependencies": {
-        "@types/bootstrap": "^3.4.0",
+        "@types/bootstrap": "^5.2.1",
         "@types/dockerode": "3.3.9",
         "@types/jquery": "^3.5.14",
         "@types/lodash": "^4.14.182",
