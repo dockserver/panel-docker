@@ -15,6 +15,13 @@ If you want to help
 Ask on the Discord
 
 
+## First Screenshots
+<p align="center">
+  <img src="./images/image.jpg">
+</p>
+
+
+
 ------
 
 ## Contributors ✨
