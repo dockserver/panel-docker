@@ -14,7 +14,7 @@ module.exports = {
     context: __dirname,
     entry: './src/app/index.tsx',
     output: {
-        filename: 'bundle.js',
+        filename: '[name].js',
         path: __dirname + '/public',
         chunkFilename: '[id].[chunkhash].js'
     },
