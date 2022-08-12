@@ -1,15 +1,22 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
+  template: __dirname + '/app/index.html',
+  filename: 'index.html',
+  inject: 'body'
+})
+
 
 module.exports = {
     mode: process.env.NODE_ENV,
     context: __dirname,
     entry: './src/app/index.tsx',
     output: {
-        filename: 'bundle.js',
-        path: path.join(__dirname, 'public', 'js'),
-        publicPath: '/',
+       filename: '[name].js',
+        path: __dirname + '/public',
+        chunkFilename: '[id].[chunkhash].js'
     },
     devtool: "source-map",
     resolve: {
