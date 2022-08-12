@@ -10,6 +10,8 @@ COPY . /usr/src/app
 
 RUN npm install -g npm-check-updates && \
     npm i -g pnpm@6.32.24 && \
-    pnpm -r install
+    npm rebuild node-sass && \
+    pnpm -r install && \
+    pnpm run build
 
 CMD ["pnpm", "run", "start"]
