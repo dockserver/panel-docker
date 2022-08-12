@@ -1,17 +1,19 @@
-const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
 module.exports = {
     mode: process.env.NODE_ENV,
-    entry: "./src/app/index.tsx",
+    context: __dirname,
+    entry: './src/app/index.tsx',
     output: {
-        filename: "bundle.js",
-        path: path.join(__dirname, "public", "js"),
+        filename: 'bundle.js',
+        path: path.join(__dirname, 'public', 'js'),
+        publicPath: '/',
     },
     devtool: "source-map",
     resolve: {
-        extensions: [".webpack.js", ".web.js", ".ts", ".tsx", ".js"],
+        extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
         alias: {
             react: "preact/compat",
             "react-dom": "preact/compat",
@@ -28,8 +30,8 @@ module.exports = {
       },
     }),
     new HtmlWebpackPlugin({
-         template: path.join(__dirname, "public", "index.html"),
-         filename: "index.html",
+         inject: true,
+         template: path.join(__dirname, './public/index.html'),
          title: "--Docker Panel--",
     }),
     ],
