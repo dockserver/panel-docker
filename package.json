@@ -5,7 +5,8 @@
     "description": "dockserver docker dashboard ",
     "main": "index.js",
     "scripts": {
-        "start": "cross-env NODE_OPTIONS=--max_old_space_size=4096 NODE_ENV=development concurrently \"ts-node-dev src/server.ts\" \"webpack serve --allowed-hosts all\"",
+        "build": "cross-env NODE_OPTIONS=--max_old_space_size=4096 NODE_ENV=development webpack -c webpack.config.js",
+        "start": "webpack serve --allowed-hosts all",
         "lint": "eslint {src,app}/**/*.{js,ts,tsx,jsx} --fix"
     },
     "author": "dockserver",
