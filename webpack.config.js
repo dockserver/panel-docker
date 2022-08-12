@@ -3,7 +3,7 @@ const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
-  template: __dirname + '/app/index.html',
+  template: __dirname + '/app/src/index.html',
   filename: 'index.html',
   inject: 'body'
 })
@@ -14,7 +14,7 @@ module.exports = {
     context: __dirname,
     entry: './src/app/index.tsx',
     output: {
-       filename: '[name].js',
+        filename: 'bundle.js',
         path: __dirname + '/public',
         chunkFilename: '[id].[chunkhash].js'
     },
