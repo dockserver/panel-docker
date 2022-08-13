@@ -1,5 +1,5 @@
-import { translate } from 'typed-intl';
- 
+import { translate } from "typed-intl";
+
 export default translate({
     key: "Key",
     value: "Value",
@@ -12,7 +12,7 @@ export default translate({
     ok: "OK",
     cancel: "Cancel",
     welcome: "Welcome",
-}).supporting('de', {
+}).supporting("de", {
     key: "Key",
     value: "Value",
     add: "Add",
