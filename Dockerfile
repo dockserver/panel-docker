@@ -8,10 +8,8 @@ WORKDIR /usr/src/app
 
 COPY . /usr/src/app
 
-RUN npm install -g npm-check-updates && \
-    npm i -g pnpm@6.32.24 && \
-    npm rebuild node-sass && \
-    pnpm -r install && \
-    pnpm run build
+RUN npm i -g pnpm@6.32.24
+RUN pnpm install
+RUN pnpm run build
 
 CMD ["pnpm", "run", "start"]
