@@ -28,7 +28,7 @@ jobs:
       - name: lint Docker Image and update pnpm packages 🔀
         run: |
           echo "lint Dockerfile"
-          docker run -it --rm -v "$PWD/Dockerfile":/Dockerfile:ro redcoolbeans/dockerlint
+          docker run -i --rm -v "$PWD/Dockerfile":/Dockerfile:ro redcoolbeans/dockerlint
           echo "install pnpm package"
           npm install -g pnpm@6.32.24
           echo "run pnpm update packages from packages.json"
