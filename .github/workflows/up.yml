@@ -30,7 +30,7 @@ jobs:
           echo "lint Dockerfile"
           docker run -i --rm -v "$PWD/Dockerfile":/Dockerfile:ro redcoolbeans/dockerlint
           echo "update dependencies"
-          node run update:packages
+          npm run update:packages && npm update
           echo "install pnpm package"
           npm install -g pnpm@6.32.24
           echo "run pnpm update packages from packages.json"
