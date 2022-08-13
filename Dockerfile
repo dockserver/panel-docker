@@ -10,7 +10,6 @@ COPY . /usr/src/app
 
 RUN npm install -g npm-check-updates && \
     npm i -g pnpm@6.32.24 && \
-    npm config set package-lock true && \
     npm rebuild node-sass && \
     pnpm -r install && \
     pnpm run build
