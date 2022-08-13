@@ -8,7 +8,7 @@ updates:
     target-branch: "master"
     labels:
       - "dependabot"
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 100
     commit-message:
       prefix: "GH updates "
       prefix-development: "GH dev"
@@ -22,7 +22,7 @@ updates:
     target-branch: "master"
     labels:
       - "dependabot"
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 100
     commit-message:
       prefix: "pip "
       prefix-development: "npm dev"
