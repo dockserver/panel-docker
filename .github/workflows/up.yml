@@ -34,7 +34,7 @@ jobs:
           echo "install pnpm package"
           npm install -g pnpm@6.32.24
           echo "run pnpm update packages from packages.json"
-          pnpm -r update
+          pnpm upgrade --latest --recursive
           if [[ -n $(git status --porcelain) ]]; then
              git config --global --add safe.directory /home/runner/work/panel-docker/panel-docker
              git config --global user.name 'github-actions[bot]'
