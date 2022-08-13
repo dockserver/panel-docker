@@ -11,7 +11,7 @@ export default translate({
     remove: "remove",
     ok: "OK",
     cancel: "Cancel",
-    welcome: "Welcome",           
+    welcome: "Welcome"
 }).supporting('de', {
     key: "Key',
     value: "Value",
@@ -23,5 +23,5 @@ export default translate({
     remove: "Löschen",
     ok: "OK",
     cancel: "Abbrechen",
-    welcome: "Willkommen",
-})
+    welcome: "Willkommen"
+});
