@@ -1,0 +1,7 @@
+.git/*
+.github/*
+.vscode/*
+images/*
+*.md
+upstream.sh
+missing
