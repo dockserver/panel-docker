@@ -7,9 +7,7 @@
     "scripts": {
         "build": "cross-env NODE_OPTIONS=--max_old_space_size=4096 NODE_ENV=development webpack -c webpack.config.js",
         "start": "webpack serve --allowed-hosts all",
-        "update:packages”: “node wipe-dependencies.js &&
-                      rm -rf node_modules && npm update --save-dev
-                      && npm update --save”
+        "update:packages": "node wipe-dependencies.js && rm -rf node_modules && npm update --save-dev && npm update --save",
         "lint": "eslint {src,app}/**/*.{js,ts,tsx,jsx} --fix"
     },
     "author": "dockserver",
