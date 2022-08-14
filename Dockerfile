@@ -1,4 +1,4 @@
-FROM node:14.20.0-alpine3.16
+FROM node:lts-alpine3.15
 
 LABEL org.opencontainers.image.source="https://github.com/dockserver/panel-docker"
 
