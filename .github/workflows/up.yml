@@ -33,7 +33,7 @@ jobs:
           npm i --save-dev @types/dockerode
           npm run update:packages
           echo "install pnpm package"
-          npm i --save-dev @types/pnpm && npm i -g pnpm
+          npm i --save-dev pnpm && npm i -g pnpm
           echo "run pnpm update packages from packages.json"
           pnpm upgrade --latest --recursive
           if [[ -n $(git status --porcelain) ]]; then
