@@ -4,8 +4,6 @@ import { App } from "./components/app";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { HomePage } from "./pages/home";
 
-export const useId = () => useConstant(incrementId);
-
 ReactDOM.render(
     <App>
         <Router basename={"panel"}>
