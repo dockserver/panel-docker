@@ -1,7 +1,6 @@
-import React from "react";
-import * as ReactDOM from "react-dom";
+import {StrictMode} from 'react';
+import {createRoot} from 'react-dom/client';
 import { App } from "./components/app";
-import { BrowserRouter as Router, Route } from "react-router-dom";
 import { HomePage } from "./pages/home";
 
 const rootElement = document.getElementById("app");
