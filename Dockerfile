@@ -1,4 +1,4 @@
-FROM node:lts-alpine3.15
+FROM node:lts-alpine3.17
 
 LABEL org.opencontainers.image.source="https://github.com/dockserver/panel-docker"
 
@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 
 COPY . /usr/src/app
 
-RUN npm i -g pnpm@6.32.24
+RUN npm i -g pnpm
 RUN pnpm install
 RUN pnpm run build
 
