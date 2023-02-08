@@ -64,7 +64,7 @@
         "node-sass": "^8.0.0",
         "nodemon": "^2.0.20",
         "pnpm": "^7.24.3",
-        "prettier": "^2.8.2",
+        "prettier": "^2.8.4",
         "react-router-dom": "^6.6.2",
         "sass": "^1.57.1",
         "sass-loader": "^13.2.0",
