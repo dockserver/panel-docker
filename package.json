@@ -14,7 +14,7 @@
     "license": "GPL-v3.0-or-later",
     "dependencies": {
         "@chakra-ui/react": "^2.4.7",
-        "@emotion/react": "^11.10.5",
+        "@emotion/react": "^11.10.6",
         "@emotion/styled": "^11.10.5",
         "@rebass/forms": "^4.0.6",
         "@tinyhttp/app": "^2.0.29",
